@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- BASIC PAGE SETTINGS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tacos Los Brody's</title>
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="files/style.css" />
+</head>
+
+<body>
+
+  <main class="home-page">
+
+    <!-- TOP NAVIGATION -->
+    <header class="top-nav">
+
+      <!-- HAMBURGER MENU BUTTON -->
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <!-- CART BUTTON -->
+      <a href="cart.html" class="cart-btn">
+        🛒
+        <span id="cartCount">0</span>
+      </a>
+
+    </header>
+
+    <!-- MOBILE DROPDOWN MENU -->
+    <nav class="mobile-menu" id="mobileMenu">
+
+      <a href="order.html">Order Now</a>
+
+      <a href="aboutus.html">About Us</a>
+
+      <!-- REVIEWS DROPDOWN -->
+      <div class="review-dropdown">
+
+        <button class="review-drop-btn" type="button">
+          Reviews ▼
+        </button>
+
+        <div class="review-dropdown-content">
+
+          <a href="https://www.google.com/search?sca_esv=c3a101fec3b85ed5&rlz=1C1CHBF_enCA1091CA1091&sxsrf=ANbL-n7HHZaK9CzFeGW4U131EixcsaoM3w:1780193825670&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORzjCUYle3g9wDIijbh32ffz117FlE2K5D3s_yZ6R_kUChubw_3Ub5P0WJi9waxIrg0U1wZTeqyRG-ddlZ2gbQ1CwH-NtrJgCnvfMhpqUJVSDTXBKQ%3D%3D&q=Tacos+Los+Brody%27s+Reviews&sa=X&ved=2ahUKEwj45fDkuuKUAxW2D0QIHRxoJEgQ0bkNegQIJRAH&biw=1500&bih=831&dpr=2" target="_blank">
+            Google Reviews
+          </a>
+
+          <a href="https://www.google.com/search?sca_esv=c3a101fec3b85ed5&rlz=1C1CHBF_enCA1091CA1091&sxsrf=ANbL-n7HHZaK9CzFeGW4U131EixcsaoM3w:1780193825670&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORzjCUYle3g9wDIijbh32ffz117FlE2K5D3s_yZ6R_kUChubw_3Ub5P0WJi9waxIrg0U1wZTeqyRG-ddlZ2gbQ1CwH-NtrJgCnvfMhpqUJVSDTXBKQ%3D%3D&q=Tacos+Los+Brody%27s+Reviews&sa=X&ved=2ahUKEwj45fDkuuKUAxW2D0QIHRxoJEgQ0bkNegQIJRAH&biw=1500&bih=831&dpr=2" target="_blank">
+            Yelp Reviews
+          </a>
+
+        </div>
+
+      </div>
+
+      <a href="#catering">Catering</a>
+
+    </nav>
+
+    <!-- LOGO SECTION -->
+    <section class="logo-section">
+      <img src="files/logo.png" alt="Tacos Los Brody's Logo">
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <div class="hero-text">
+
+        <h1>
+          Tacos Los <br>
+          <span>Brody's</span> <br>
+          Presents <br>
+          <span>Real Tacos.</span> <br>
+          Real Flavor. <br>
+          <span>Real Family.</span>
+        </h1>
+
+        <div class="small-line">
+          <span></span>
+          ★
+          <span></span>
+        </div>
+
+      </div>
+
+      <img class="hero-img" src="files/foodtruck.png" alt="Tacos Los Brody's Food Truck">
+
+    </section>
+
+    <!-- MAIN BUTTONS SECTION -->
+    <section class="main-buttons" id="order">
+
+      <!-- ORDER NOW BUTTON -->
+      <a href="order.html" class="action-btn orange-btn">
+
+        <div class="btn-left">
+          <span class="btn-icon">🌮</span>
+
+          <div>
+            <h2>Order Now</h2>
+            <p>Order ahead & skip the line</p>
+          </div>
+        </div>
+
+        <span class="arrow">›</span>
+
+      </a>
+
+      <!-- ABOUT US BUTTON -->
+      <a href="aboutus.html" class="action-btn green-btn">
+
+        <div class="btn-left">
+          <span class="btn-icon">🚚</span>
+
+          <div>
+            <h2>About Us</h2>
+            <p>Our story, our mission</p>
+          </div>
+        </div>
+
+        <span class="arrow">›</span>
+
+      </a>
+
+      <!-- REVIEWS BUTTON -->
+      <div class="review-card-dropdown">
+
+  <button class="action-btn cream-btn review-main-btn" type="button" id="reviewMainBtn">
+    <div class="btn-left">
+      <span class="btn-icon">⭐</span>
+      <div>
+        <h2>Reviews</h2>
+        <p>Google & Yelp reviews</p>
+      </div>
+    </div>
+    <span class="arrow">›</span>
+  </button>
+
+  <div class="review-card-links" id="reviewCardLinks">
+    <a href="https://www.google.com/search?sca_esv=c3a101fec3b85ed5&rlz=1C1CHBF_enCA1091CA1091&sxsrf=ANbL-n7HHZaK9CzFeGW4U131EixcsaoM3w:1780193825670&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORzjCUYle3g9wDIijbh32ffz117FlE2K5D3s_yZ6R_kUChubw_3Ub5P0WJi9waxIrg0U1wZTeqyRG-ddlZ2gbQ1CwH-NtrJgCnvfMhpqUJVSDTXBKQ%3D%3D&q=Tacos+Los+Brody%27s+Reviews&sa=X&ved=2ahUKEwj45fDkuuKUAxW2D0QIHRxoJEgQ0bkNegQIJRAH&biw=1500&bih=831&dpr=2" target="_blank">Google Reviews</a>
+    <a href="https://www.yelp.com/biz/tacos-los-brodys-aurora" target="_blank">Yelp Reviews</a>
+  </div>
+
+    </section>
+
+    <!-- CATERING SECTION -->
+    <section class="catering-mini" id="catering">
+
+      <h2>Need Catering?</h2>
+
+      <p>
+        Book Tacos Los Brody’s for parties, events, work lunches, and celebrations.
+      </p>
+
+      <a href="catering.html" class="book-btn">Book Now</a>
+
+    </section>
+
+    <!-- SMALL ABOUT CARD SECTION -->
+    <section class="about-card" id="about">
+
+      <div class="divider">
+        <span></span>
+        ★
+        <span></span>
+      </div>
+
+      <h2>
+        <span>Faith</span> •
+        <span>Family</span> •
+        <span>Tacos</span>
+      </h2>
+
+      <p>
+        We’re a local food truck serving up authentic tacos with quality
+        ingredients and lots of hungry! 💗
+      </p>
+
+      <div class="features">
+
+        <div class="feature">
+          <span>🌮</span>
+          <h3>Authentic<br>Recipes</h3>
+        </div>
+
+        <div class="feature">
+          <span>🍃</span>
+          <h3>Fresh<br>Ingredients</h3>
+        </div>
+
+        <div class="feature">
+          <span>💗</span>
+          <h3>Made<br>With Love</h3>
+        </div>
+
+        <div class="feature">
+          <span>🌴</span>
+          <h3>Local<br>& Proud</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER / REVIEWS AREA -->
+    <footer class="footer" id="reviews">
+
+      <!-- INSTAGRAM LINK -->
+      <a 
+        href="https://www.instagram.com/tacos.losbrodys?igsh=MXFrcjdqbG05eWYwZg==" 
+        class="insta-link"
+        target="_blank"
+      >
+        <img src="files/instalogo.png" alt="Instagram">
+      </a>
+
+    </footer>
+
+  </main>
+
+  <!-- JAVASCRIPT FILE -->
+  <script src="files/script.js"></script>
+
+</body>
+
+</html>

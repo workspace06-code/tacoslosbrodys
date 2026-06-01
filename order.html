@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Now | Tacos Los Brody's</title>
+  <link rel="stylesheet" href="files/style.css" />
+</head>
+
+<body>
+  <main class="order-page">
+
+    <header class="order-header">
+      <a href="index.html" class="back-btn">‹</a>
+
+      <div>
+        <h1>Order Now</h1>
+        <p>Tacos Los Brody’s Menu</p>
+      </div>
+
+      <a href="cart.html" class="cart-btn">
+        🛒
+        <span id="cartCount">0</span>
+      </a>
+    </header>
+
+    <section class="category-tabs">
+      <button class="tab active" data-category="all">All</button>
+      <button class="tab" data-category="burritos">Burritos</button>
+      <button class="tab" data-category="specials">Specials</button>
+      <button class="tab" data-category="dishes">Dishes</button>
+      <button class="tab" data-category="drinks">Drinks</button>
+    </section>
+
+    <section class="menu-list">
+
+      <article class="menu-card" data-category="tacos">
+        <img src="files/tacos.jpg" alt="Tacos">
+        <div class="menu-info">
+          <h2>Tacos</h2>
+          <p>Your choice of meat with cilantro, onion, lime, cucumber, and radish.</p>
+          <div class="menu-bottom">
+            <span>$3.50</span>
+            <button class="add-btn" data-name="Tacos" data-price="3.50">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="tacos">
+        <img src="files/tacogobernado.jpg" alt="Taco El Gobernador">
+        <div class="menu-info">
+          <h2>Taco El Gobernador</h2>
+          <p>Corn tortilla, mozzarella cheese, shrimp, peppers, and onion.</p>
+          <div class="menu-bottom">
+            <span>$4.00</span>
+            <button class="add-btn" data-name="Taco El Gobernador" data-price="4.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/quesabirria.jpg" alt="Quesabirria">
+        <div class="menu-info">
+          <h2>Quesabirria</h2>
+          <p>Corn tortilla, mozzarella cheese, birria, onion, cilantro, and consume.</p>
+          <div class="menu-bottom">
+            <span>$4.00</span>
+            <button class="add-btn" data-name="Quesabirria" data-price="4.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="tacos">
+        <img src="files/vegcon.jpg" alt="Taco con Vegetales">
+        <div class="menu-info">
+          <h2>Taco con Vegetales</h2>
+          <p>Small flour tortilla with lettuce, peppers, cilantro, and onions.</p>
+          <div class="menu-bottom">
+            <span>$4.00</span>
+            <button class="add-btn" data-name="Taco con Vegetales" data-price="4.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/torta.jpg" alt="Tortas">
+        <div class="menu-info">
+          <h2>Tortas</h2>
+          <p>Your choice of meat on soft bread with ham, beans, mayo, lettuce, tomato, avocado, and grilled onion.</p>
+          <div class="menu-bottom">
+            <span>$13.00</span>
+            <button class="add-btn" data-name="Tortas" data-price="13.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/pambazo.png" alt="Pambazo">
+        <div class="menu-info">
+          <h2>Pambazo</h2>
+          <p>Your choice of meat served on soft bread dipped in guajillo chili marinade.</p>
+          <div class="menu-bottom">
+            <span>$13.00</span>
+            <button class="add-btn" data-name="Pambazo" data-price="13.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="burritos">
+        <img src="files/lburrito.jpg" alt="Lunch Burrito">
+        <div class="menu-info">
+          <h2>Lunch Burrito</h2>
+          <p>Large flour tortilla with rice, beans, grilled onion, peppers, cilantro, and mozzarella cheese.</p>
+          <div class="menu-bottom">
+            <span>$12.00</span>
+            <button class="add-btn" data-name="Lunch Burrito" data-price="12.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="burritos">
+        <img src="files/bburrito.jpg" alt="Breakfast Burrito">
+        <div class="menu-info">
+          <h2>Breakfast Burrito</h2>
+          <p>Large flour tortilla with egg, potato, and mozzarella cheese.</p>
+          <div class="menu-bottom">
+            <span>$8.00</span>
+            <button class="add-btn" data-name="Breakfast Burrito" data-price="8.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="burritos">
+        <img src="files/Sburrito.png" alt="Smothered Burrito">
+        <div class="menu-info">
+          <h2>Smothered Burrito</h2>
+          <p>Large flour tortilla with beans, rice, potato, egg, cheese, sour cream, cilantro, and green chili.</p>
+          <div class="menu-bottom">
+            <span>$13.00</span>
+            <button class="add-btn" data-name="Smothered Burrito" data-price="13.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/sope.png" alt="Sopes">
+        <div class="menu-info">
+          <h2>Sopes</h2>
+          <p>Handmade thick corn base topped with beans, your choice of meat, lettuce, sour cream, and cheese.</p>
+          <div class="menu-bottom">
+            <span>$6.00</span>
+            <button class="add-btn" data-name="Sopes" data-price="6.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/huarache.png" alt="Huarache">
+        <div class="menu-info">
+          <h2>Huarache</h2>
+          <p>Handmade oval corn base topped with beans, your choice of meat, lettuce, sour cream, and cheese.</p>
+          <div class="menu-bottom">
+            <span>$14.00</span>
+            <button class="add-btn" data-name="Huarache" data-price="14.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/quesadilla.jpg" alt="Quesadilla">
+        <div class="menu-info">
+          <h2>Quesadilla</h2>
+          <p>Your choice of meat in a flour tortilla filled with melted cheese, onion, cilantro, avocado, and guacamole.</p>
+          <div class="menu-bottom">
+            <span>$12.00</span>
+            <button class="add-btn" data-name="Quesadilla" data-price="12.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/skillet.jpg" alt="Skillet">
+        <div class="menu-info">
+          <h2>Skillet</h2>
+          <p>Your choice of meat, potato, peppers, mozzarella cheese, green chili, egg, onion, and cilantro.</p>
+          <div class="menu-bottom">
+            <span>$14.00</span>
+            <button class="add-btn" data-name="Skillet" data-price="14.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="specials">
+        <img src="files/chilaquiles.png" alt="Chilaquiles">
+        <div class="menu-info">
+          <h2>Chilaquiles</h2>
+          <p>Tortilla chips, meat of your choice, green or red salsa, cheese, sour cream, egg, and cilantro.</p>
+          <div class="menu-bottom">
+            <span>$13.00</span>
+            <button class="add-btn" data-name="Chilaquiles" data-price="13.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="dishes">
+        <img src="files/Fajita.png" alt="Fajitas">
+        <div class="menu-info">
+          <h2>Fajitas</h2>
+          <p>Steak, chicken, or shrimp with peppers, onion, cilantro, rice, beans, corn or flour tortillas.</p>
+          <div class="menu-bottom">
+            <span>$13.00</span>
+            <button class="add-btn" data-name="Fajitas" data-price="13.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="dishes">
+        <img src="files/discada.jpg" alt="Discada">
+        <div class="menu-info">
+          <h2>Discada</h2>
+          <p>Chorizo, chicken, bacon, ham, peppers, onion, cilantro, rice, beans, and tortillas.</p>
+          <div class="menu-bottom">
+            <span>$16.00</span>
+            <button class="add-btn" data-name="Discada" data-price="16.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="dishes">
+        <img src="files/alamber.png" alt="Alambre">
+        <div class="menu-info">
+          <h2>Alambre</h2>
+          <p>Your choice of meat, peppers, onion, cilantro, bacon, ham, mozzarella cheese, rice, beans, and tortillas.</p>
+          <div class="menu-bottom">
+            <span>$15.00</span>
+            <button class="add-btn" data-name="Alambre" data-price="15.00">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- DRINKS -->
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/mcoke.png" alt="Mexican Coke">
+  <div class="menu-info">
+    <h2>Mexican Coke</h2>
+    <p>Classic Mexican Coca-Cola served in a glass bottle.</p>
+    <div class="menu-bottom">
+      <span>$4.00</span>
+      <button class="add-btn" data-name="Mexican Coke" data-price="4.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/boing.png" alt="Boing">
+  <div class="menu-info">
+    <h2>Boing</h2>
+    <p>Traditional Mexican fruit drink.</p>
+    <div class="menu-bottom">
+      <span>$4.00</span>
+      <button class="add-btn" data-name="Boing" data-price="4.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/jarritos.png" alt="Jarrito">
+  <div class="menu-info">
+    <h2>Jarrito</h2>
+    <p>Refreshing Mexican soda with assorted flavors.</p>
+    <div class="menu-bottom">
+      <span>$3.50</span>
+      <button class="add-btn" data-name="Jarrito" data-price="3.50">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/sprite.png" alt="Sprite">
+  <div class="menu-info">
+    <h2>Sprite</h2>
+    <p>Ice-cold lemon lime soda.</p>
+    <div class="menu-bottom">
+      <span>$4.00</span>
+      <button class="add-btn" data-name="Sprite" data-price="4.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/sidral.png" alt="Sidral">
+  <div class="menu-info">
+    <h2>Sidral</h2>
+    <p>Sweet Mexican apple soda.</p>
+    <div class="menu-bottom">
+      <span>$3.50</span>
+      <button class="add-btn" data-name="Sidral" data-price="3.50">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/fanta.png" alt="Fanta">
+  <div class="menu-info">
+    <h2>Fanta</h2>
+    <p>Refreshing orange soda served cold.</p>
+    <div class="menu-bottom">
+      <span>$4.00</span>
+      <button class="add-btn" data-name="Fanta" data-price="4.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/drinks.jpg" alt="Horchata">
+  <div class="menu-info">
+    <h2>Horchata</h2>
+    <p>Traditional sweet rice cinnamon drink.</p>
+    <div class="menu-bottom">
+      <span>$6.00</span>
+      <button class="add-btn" data-name="Horchata" data-price="6.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/drinks.jpg" alt="Jamaica">
+  <div class="menu-info">
+    <h2>Jamaica</h2>
+    <p>Refreshing hibiscus agua fresca.</p>
+    <div class="menu-bottom">
+      <span>$6.00</span>
+      <button class="add-btn" data-name="Jamaica" data-price="6.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/drinks.jpg" alt="Pepino">
+  <div class="menu-info">
+    <h2>Pepino</h2>
+    <p>Fresh cucumber agua fresca.</p>
+    <div class="menu-bottom">
+      <span>$6.00</span>
+      <button class="add-btn" data-name="Pepino" data-price="6.00">Add</button>
+    </div>
+  </div>
+</article>
+
+<article class="menu-card" data-category="drinks">
+  <img src="files/drinks.jpg" alt="Piña">
+  <div class="menu-info">
+    <h2>Piña</h2>
+    <p>Sweet pineapple agua fresca.</p>
+    <div class="menu-bottom">
+      <span>$6.00</span>
+      <button class="add-btn" data-name="Piña" data-price="6.00">Add</button>
+    </div>
+  </div>
+</article>
+
+    </section>
+
+    <section class="sticky-cart" id="stickyCart">
+      <div>
+        <p id="itemCount">0 items</p>
+        <h3 id="cartTotal">$0.00</h3>
+      </div>
+
+      <a href="cart.html">View Cart</a>
+    </section>
+
+    <!-- MEAT CHOICE POPUP -->
+<div class="meat-modal" id="meatModal">
+  <div class="meat-box">
+    <button class="close-modal" id="closeModal">×</button>
+
+    <h2 id="modalItemName">Choose Meat</h2>
+    <p class="modal-subtitle">Select one meat option before adding to cart.</p>
+
+    <div class="meat-options">
+      <label><input type="radio" name="meat" value="Asada"> Asada/Grilled Marinated Steak</label>
+      <label><input type="radio" name="meat" value="Pastor"> Pastor/Marinated Pork</label>
+      <label><input type="radio" name="meat" value="Chicken"> Pollo/Chicken</label>
+      <label><input type="radio" name="meat" value="Chorizo"> Chorizo/Seasoned Mexican Sausage</label>
+      <label><input type="radio" name="meat" value="Carnitas"> Carnitas/Slow Cooked Pork</label>
+      <label><input type="radio" name="meat" value="campechanos"> Campechanos/Mixed Meat</label>
+      <label><input type="radio" name="meat" value="buche"> Buche/Pork Stomach</label>
+      <label><input type="radio" name="meat" value="lengua">Lengua/Beef Tongue</label>
+      <label><input type="radio" name="meat" value="Camaron">Camaron/Shrimp</label>
+      <label><input type="radio" name="meat" value="Tripas">Tripas/Tripes</label>
+      
+      <label><input type="radio" name="meat" value="Goat" id="goatOption">Chivo/Goat <span>Weekend Only</span></label>
+    </div>
+
+    <p class="error-text" id="meatError"></p>
+
+    <button class="confirm-add-btn" id="confirmAddBtn">
+      Add To Cart
+    </button>
+  </div>
+</div>
+
+  </main>
+
+  <script src="files/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Checkout | Tacos Los Brody's</title>
+
+  <link rel="stylesheet" href="files/style.css" />
+</head>
+
+<body>
+
+<main class="checkout-page">
+
+  <!-- HEADER -->
+  <header class="cart-header">
+
+    <a href="cart.html" class="back-btn">
+      ‹
+    </a>
+
+    <div>
+      <h1>Checkout</h1>
+      <p>Complete your order</p>
+    </div>
+
+    <div style="width:48px;"></div>
+
+  </header>
+
+  <!-- ORDER ITEMS -->
+  <section class="checkout-summary">
+
+    <h2>Your Order</h2>
+
+    <div id="checkoutItems"></div>
+
+  </section>
+
+  <!-- PICKUP DETAILS -->
+ <form 
+  class="checkout-form"
+  id="checkoutForm"
+  action="https://formspree.io/f/YOUR_FORM_ID"
+  method="POST"
+>
+
+  <div class="input-group">
+    <label>Name</label>
+    <input type="text" name="Customer Name" placeholder="Your name" required>
+  </div>
+
+  <div class="input-group">
+    <label>Phone Number</label>
+    <input type="tel" name="Phone Number" placeholder="(555) 555-5555" required>
+  </div>
+
+  <div class="input-group">
+    <label>Pickup Time</label>
+    <select name="Pickup Time" required>
+      <option>ASAP</option>
+      <option>15 Minutes</option>
+      <option>30 Minutes</option>
+      <option>45 Minutes</option>
+      <option>1 Hour</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>Special Notes</label>
+    <textarea name="Special Notes" placeholder="Extra salsa, no onions, etc."></textarea>
+  </div>
+
+  <!-- HIDDEN ORDER INFO SENT TO YOU -->
+  <input type="hidden" name="Order Details" id="orderDetailsInput">
+  <input type="hidden" name="Items Total" id="itemsTotalInput">
+  <input type="hidden" name="Sales Tax" id="salesTaxInput">
+  <input type="hidden" name="Order Total" id="orderTotalInput">
+
+</form>
+
+  </section>
+
+  <!-- ORDER SUMMARY -->
+  <section class="order-summary-box">
+
+    <h2>Order Summary</h2>
+
+    <div class="summary-line">
+      <span>Items Total</span>
+      <strong id="summaryItemsTotal">$0.00</strong>
+    </div>
+
+    <div class="summary-line">
+      <span>Sales Tax</span>
+      <strong id="summaryTax">$0.00</strong>
+    </div>
+
+    <div class="summary-line total-line">
+      <span>Order Total</span>
+      <strong id="summaryGrandTotal">$0.00</strong>
+    </div>
+
+  </section>
+
+  <!-- PAYMENT NOTICE -->
+  <section class="payment-note">
+
+    <p>
+      ⚠️ <strong>Important:</strong>
+      After clicking <strong>Pay Now</strong>, you will be redirected to our secure Square payment page.
+      Please remember your <strong>Order Total</strong> shown above and enter that amount when completing payment.
+    </p>
+
+  </section>
+
+ <!-- PAY BUTTON -->
+<section class="place-order-section">
+  <button
+    type="button"
+    class="place-order-btn"
+    id="squarePayBtn"
+  >
+    PAY NOW
+  </button>
+</section>
+
+</main>
+
+<script src="files/script.js"></script>
+
+</body>
+</html>
